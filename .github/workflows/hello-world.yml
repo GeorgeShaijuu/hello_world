@@ -1,0 +1,19 @@
+name: Hello World
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello, World!"
+
+      - name: Show Date
+        run: date
+
+      - name: Show System Info
+        run: uname -a
